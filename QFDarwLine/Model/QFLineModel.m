@@ -2,7 +2,7 @@
 //  QFLineModel.m
 //  QFDarwLine
 //
-//  Created by 李一平 on 2019/1/29.
+//  Created by qingfengiOS on 2019/1/29.
 //  Copyright © 2019 qingfengiOS. All rights reserved.
 //
 
@@ -10,12 +10,12 @@
 
 @implementation QFLineModel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithX:(CGFloat)x y:(CGFloat)y {
+    if (self = [super init]) {
+        self.xValue = x;
+        self.yValue = y;
+    }
+    return self;
 }
-*/
 
 @end

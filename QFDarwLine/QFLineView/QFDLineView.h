@@ -2,16 +2,22 @@
 //  QFDLineView.h
 //  QFDarwLine
 //
-//  Created by 李一平 on 2019/1/29.
+//  Created by qingfengiOS on 2019/1/29.
 //  Copyright © 2019 qingfengiOS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
+@class QFLineModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface QFDLineView : UIView
 
+// 数据源
+@property (nonatomic, copy) NSArray <QFLineModel *>*dataArray;
+
+- (instancetype)lineViewWithFrame:(CGRect)frame dataSource:(NSArray <QFLineModel *>*)dataArray;
+
+- (void)startDraw;
 @end
 
 NS_ASSUME_NONNULL_END

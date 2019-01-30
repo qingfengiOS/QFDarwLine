@@ -15,6 +15,8 @@
 		FD0164DE22003BC500E4E939 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0164DD22003BC500E4E939 /* main.m */; };
 		FD0164E822003BC500E4E939 /* QFDarwLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0164E722003BC500E4E939 /* QFDarwLineTests.m */; };
 		FD0164F322003BC500E4E939 /* QFDarwLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0164F222003BC500E4E939 /* QFDarwLineUITests.m */; };
+		FD01650322003C4800E4E939 /* QFDLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD01650222003C4800E4E939 /* QFDLineView.m */; };
+		FD016507220045C300E4E939 /* QFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD016506220045C300E4E939 /* QFLineModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		FD0164EE22003BC500E4E939 /* QFDarwLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFDarwLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0164F222003BC500E4E939 /* QFDarwLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFDarwLineUITests.m; sourceTree = "<group>"; };
 		FD0164F422003BC500E4E939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD01650122003C4800E4E939 /* QFDLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFDLineView.h; sourceTree = "<group>"; };
+		FD01650222003C4800E4E939 /* QFDLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFDLineView.m; sourceTree = "<group>"; };
+		FD016505220045C300E4E939 /* QFLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFLineModel.h; sourceTree = "<group>"; };
+		FD016506220045C300E4E939 /* QFLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFLineModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		FD0164CD22003BC400E4E939 /* QFDarwLine */ = {
 			isa = PBXGroup;
 			children = (
+				FD0165042200454A00E4E939 /* Model */,
+				FD01650022003C3600E4E939 /* QFLineView */,
 				FD0164CE22003BC400E4E939 /* AppDelegate.h */,
 				FD0164CF22003BC400E4E939 /* AppDelegate.m */,
 				FD0164D122003BC400E4E939 /* ViewController.h */,
@@ -130,6 +138,24 @@
 				FD0164F422003BC500E4E939 /* Info.plist */,
 			);
 			path = QFDarwLineUITests;
+			sourceTree = "<group>";
+		};
+		FD01650022003C3600E4E939 /* QFLineView */ = {
+			isa = PBXGroup;
+			children = (
+				FD01650122003C4800E4E939 /* QFDLineView.h */,
+				FD01650222003C4800E4E939 /* QFDLineView.m */,
+			);
+			path = QFLineView;
+			sourceTree = "<group>";
+		};
+		FD0165042200454A00E4E939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD016505220045C300E4E939 /* QFLineModel.h */,
+				FD016506220045C300E4E939 /* QFLineModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD016507220045C300E4E939 /* QFLineModel.m in Sources */,
 				FD0164D322003BC400E4E939 /* ViewController.m in Sources */,
 				FD0164DE22003BC500E4E939 /* main.m in Sources */,
+				FD01650322003C4800E4E939 /* QFDLineView.m in Sources */,
 				FD0164D022003BC400E4E939 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +464,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QFDarwLine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +482,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QFDarwLine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
